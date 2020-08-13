@@ -12,10 +12,12 @@ class AnotherClassInAnotherFile {
     
     init() {
         
-        //Step 8. Try to print aFilePrivateProperty Here
+        //Step 8. Try to print aFilePrivateProperty Here - Not Possible
+        let aClass = AClass()
+        //print("\(aClass.aFilePrivateProperty) printed from init in AnotherClassInAnotherFile")
         
-        //Step 10. Try to print anInternalProperty Here
-        
+        //Step 10. Try to print anInternalProperty Here - Possible
+        print("\(aClass.anInternalProperty) printed from init in AnotherClassInAnotherFile")
     }
     
 }
